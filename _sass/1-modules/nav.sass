@@ -1,0 +1,31 @@
+nav.nav-wrap
+    transition: all 0.3s ease-in
+    position: absolute
+    top: 0
+    left: 0
+    right: 0
+    z-index: 900
+    max-width: 1000px
+    display: flex
+    justify-content: space-between
+    margin: auto
+    padding: 40px
+    @media screen and (max-width: 600px)
+        padding: 35px 20px
+    ul.navigation
+        display: flex
+        flex-direction: row
+        justify-content: center
+        align-items: center
+        @media screen and (max-width: 600px)  
+            display: none
+        li
+          display: block
+          padding-right: 30px 
+
+        a
+            color: $primary
+            font-size: 2em
+            transition: all 0.15s ease-in
+        
+    
