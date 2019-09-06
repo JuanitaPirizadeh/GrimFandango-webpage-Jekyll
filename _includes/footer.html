@@ -1,0 +1,16 @@
+<footer class="footer-main" style="background-image:url('{{ site.baseurl }}/assets/img/footer2.png')">
+  
+
+<footer class="footer-wrapper">
+<div id="newsletter" class="newsletter-slug">
+    <h2>Newsletter</h2>
+    <p>Stay connected and updated, subscribe!</p>
+</div>
+{% include newsletter-form.html %}
+<div class="footer-social-links">
+    <a href="{{ site.facebook_path }}" target="_blank" class="social-icon-wrap footer-facebook-wrapper"></a>
+    <a href="{{ site.twitter_path }}" target="_blank" class="social-icon-wrap footer-twitter-wrapper"></a>
+    <a href="{{ site.instagram_path }}" target="_blank" class="social-icon-wrap footer-instagram-wrapper"></a>
+</div>
+<a href="mailto:{{ site.email }}" class="footer-email">{{ site.email }}</a>
+</footer> 
