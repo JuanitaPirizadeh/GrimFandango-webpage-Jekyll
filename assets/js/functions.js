@@ -1,4 +1,4 @@
-/*
+
 
 anime({
     targets: "#GrimHead",
@@ -8,4 +8,4 @@ anime({
     duration: 4000,
     direction: "alternate",
     loop: true
-  });*/
+  });
