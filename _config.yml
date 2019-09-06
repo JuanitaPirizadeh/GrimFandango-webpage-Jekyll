@@ -23,7 +23,6 @@ email: grimfandangoremasterd@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
  The homepage of the remastered version of the beloved game Grim Fandango.
 
-baseurl: "/grimfandango" # the subpath of your site, e.g. /blog
 url: "https://fandango.com" # the base hostname & protocol for your site, e.g. http://example.com
 
 twitter_path: https://twitter.com
