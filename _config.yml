@@ -25,9 +25,9 @@ description: >- # this means to ignore newlines until "baseurl:"
 
 url: "https://fandango.com" # the base hostname & protocol for your site, e.g. http://example.com
 
-twitter_path: https://twitter.com
-facebook_path: https://www.instagram.com
-instagram_path: https://www.facebook.com
+twitter_path: https://playstation.com
+facebook_path: https://www.facebook.com
+instagram_path: https://www.instagram.com
 youtube_path: https://www.youtube.com
 
 # Build settings
