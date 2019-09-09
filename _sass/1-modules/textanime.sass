@@ -1,0 +1,37 @@
+html 
+    scroll-behavior: smooth
+
+
+.container 
+    display: grid
+    grid-template-rows: repeat(3, 1fr)
+    justify-items: center
+    align-items: center
+    color: black
+
+
+.section-0, .section-1, .section-2, .section-3 
+   display: grid
+   justify-items: center
+   align-items: center
+   margin-top: 7%
+    
+
+
+
+.header{
+    width: 40%
+    font-size: 1.5em
+    margin-right: 50%
+    opacity: 0
+    transform: translateX(-80px)
+    transition: all 1.2s ease-out
+
+
+ .headerVisible 
+   opacity: 1
+   transform: translateX(0)
+ 
+
+
+
