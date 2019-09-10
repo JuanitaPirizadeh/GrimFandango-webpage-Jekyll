@@ -10,8 +10,6 @@ anime({
   loop: true
 });
 
-
-
   
   /* Sub title animation */
   function checkForVisibility() {
@@ -47,8 +45,12 @@ anime({
   }
   
   
-
-
+anime({
+  targets: ".shake-me",
+  rotate: "4turn",
+  duration: 3000,
+  direction: "alternate"
+})
  
   
   
