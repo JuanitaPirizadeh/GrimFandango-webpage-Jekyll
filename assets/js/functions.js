@@ -53,4 +53,12 @@ anime({
 })
  
   
+const myAnimation = anime({
+  targets: "#pop-up",
+  scale: 3,
+  duration: 1000,
+  direction: 'alternate',
+  easing: 'linear',
+  loop: true
+})
   
