@@ -1,4 +1,21 @@
+// Wrap every letter in a span
+var textWrapper = document.querySelector('.ml6 .letters');
+textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
 
+anime.timeline({loop: true})
+  .add({
+    targets: '.ml6 .letter',
+    translateY: ["1.1em", 0],
+    translateZ: 0,
+    duration: 500,
+    delay: (el, i) => 40 * i
+  }).add({
+    targets: '.ml6',
+    opacity: 0,
+    duration: 1000,
+    easing: "easeOutExpo",
+    delay: 1000
+  });
 
 anime({
   targets: "#GrimHead",
@@ -9,8 +26,6 @@ anime({
   direction: "alternate",
   loop: true
 });
-
-
 
   
   /* Sub title animation */
@@ -47,8 +62,22 @@ anime({
   }
   
   
-
-
+anime({
+  targets: ".shake-me",
+  rotate: "4turn",
+  duration: 3000,
+  direction: "alternate"
+})
  
   
+
+const myAnimation = anime({
+  targets: "#pop-up",
+  scale: 3,
+  duration: 1000,
+  direction: 'alternate',
+  easing: 'linear',
+  loop: true
+})
   
+
