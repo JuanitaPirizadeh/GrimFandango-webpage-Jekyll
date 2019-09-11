@@ -27,8 +27,6 @@ anime({
   loop: true
 });
 
-
-
   
   /* Sub title animation */
   function checkForVisibility() {
@@ -64,8 +62,22 @@ anime({
   }
   
   
-
-
+anime({
+  targets: ".shake-me",
+  rotate: "4turn",
+  duration: 3000,
+  direction: "alternate"
+})
  
   
- 
+
+const myAnimation = anime({
+  targets: "#pop-up",
+  scale: 3,
+  duration: 1000,
+  direction: 'alternate',
+  easing: 'linear',
+  loop: true
+})
+  
+
