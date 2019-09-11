@@ -1,3 +1,28 @@
+anime.timeline({loop: true})
+  .add({
+    targets: '.ml6 .letter',
+    translateY: ["1.1em", 0],
+    translateZ: 0,
+    duration: 500,
+    delay: (el, i) => 40 * i
+  }).add({
+    targets: '.ml6',
+    opacity: 0,
+    duration: 1000,
+    easing: "easeOutExpo",
+    delay: 1000
+  });
+
+const myAni = anime({
+  targets: "#GrimHead",
+  translateX: [-500, 1950],  
+  rotate: "4turn",
+  easing: "easeInOutQuart",
+  duration: 3000,
+  direction: "alternate",
+  loop: true
+});
+
 
 const myAniFade = anime({
   targets: "#fade-animation",
@@ -31,30 +56,6 @@ var textWrapper = document.querySelector('.ml6 .letters');
 textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
 
 
-anime.timeline({loop: true})
-  .add({
-    targets: '.ml6 .letter',
-    translateY: ["1.1em", 0],
-    translateZ: 0,
-    duration: 500,
-    delay: (el, i) => 40 * i
-  }).add({
-    targets: '.ml6',
-    opacity: 0,
-    duration: 1000,
-    easing: "easeOutExpo",
-    delay: 1000
-  });
-
-const myAni = anime({
-  targets: "#GrimHead",
-  translateX: [-500, 1950],  
-  rotate: "4turn",
-  easing: "easeInOutQuart",
-  duration: 3000,
-  direction: "alternate",
-  loop: true
-});
 
   
   /* Sub title animation */
